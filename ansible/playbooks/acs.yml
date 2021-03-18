@@ -1,6 +1,7 @@
 ---
 - name: Activemq Role
-  hosts: activemq
+  hosts: local
+  connection: local
   become: true
   become_method: sudo
   roles:

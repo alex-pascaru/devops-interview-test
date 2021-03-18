@@ -47,7 +47,7 @@
   become: true
   become_user: root
   copy:
-    src: "{{ temp_dir }}/{{ jdk_folder }}/"
+    src: "{{ temp_dir }}/{{ jdk_folder }}"
     dest: "{{ java_home }}"
     remote_src: true
     owner: root
